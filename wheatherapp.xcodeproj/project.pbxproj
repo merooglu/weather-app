@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		679DE6B08D06B6974B6BB9A6 /* Pods_wheatherapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C33FBF561C2B66B461A4C04 /* Pods_wheatherapp.framework */; };
+		91024CC2235108D300C6BE7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91024CC1235108D300C6BE7F /* AppDelegate.swift */; };
+		91024CC4235108D300C6BE7F /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91024CC3235108D300C6BE7F /* WeatherVC.swift */; };
+		91024CC7235108D300C6BE7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91024CC5235108D300C6BE7F /* Main.storyboard */; };
+		91024CC9235108D600C6BE7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91024CC8235108D600C6BE7F /* Assets.xcassets */; };
+		91024CCC235108D600C6BE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91024CCA235108D600C6BE7F /* LaunchScreen.storyboard */; };
+		918464C223539B7D0092C04B /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918464C123539B7D0092C04B /* Forecast.swift */; };
+		91B9AE792351B49800677287 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9AE782351B49800677287 /* Constants.swift */; };
+		91B9AE7B2351B6C500677287 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9AE7A2351B6C500677287 /* CurrentWeather.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C1608EE48D668D4EC23705F /* Pods-wheatherapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wheatherapp.release.xcconfig"; path = "Target Support Files/Pods-wheatherapp/Pods-wheatherapp.release.xcconfig"; sourceTree = "<group>"; };
+		30C11E956B5EC19ADAA29784 /* Pods-wheatherapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wheatherapp.debug.xcconfig"; path = "Target Support Files/Pods-wheatherapp/Pods-wheatherapp.debug.xcconfig"; sourceTree = "<group>"; };
+		91024CBE235108D300C6BE7F /* wheatherapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wheatherapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91024CC1235108D300C6BE7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91024CC3235108D300C6BE7F /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
+		91024CC6235108D300C6BE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91024CC8235108D600C6BE7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91024CCB235108D600C6BE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91024CCD235108D600C6BE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		918464C123539B7D0092C04B /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		91B9AE782351B49800677287 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		91B9AE7A2351B6C500677287 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		9C33FBF561C2B66B461A4C04 /* Pods_wheatherapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wheatherapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91024CBB235108D300C6BE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679DE6B08D06B6974B6BB9A6 /* Pods_wheatherapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A1BF1247E6A381F6B2E58E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C33FBF561C2B66B461A4C04 /* Pods_wheatherapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B4A38E4820C49E019292854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30C11E956B5EC19ADAA29784 /* Pods-wheatherapp.debug.xcconfig */,
+				2C1608EE48D668D4EC23705F /* Pods-wheatherapp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91024CB5235108D300C6BE7F = {
+			isa = PBXGroup;
+			children = (
+				91024CC0235108D300C6BE7F /* wheatherapp */,
+				91024CBF235108D300C6BE7F /* Products */,
+				8B4A38E4820C49E019292854 /* Pods */,
+				7A1BF1247E6A381F6B2E58E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91024CBF235108D300C6BE7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91024CBE235108D300C6BE7F /* wheatherapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91024CC0235108D300C6BE7F /* wheatherapp */ = {
+			isa = PBXGroup;
+			children = (
+				91024CC1235108D300C6BE7F /* AppDelegate.swift */,
+				91024CC3235108D300C6BE7F /* WeatherVC.swift */,
+				91024CC5235108D300C6BE7F /* Main.storyboard */,
+				91024CC8235108D600C6BE7F /* Assets.xcassets */,
+				91024CCA235108D600C6BE7F /* LaunchScreen.storyboard */,
+				91024CCD235108D600C6BE7F /* Info.plist */,
+				91B9AE782351B49800677287 /* Constants.swift */,
+				91B9AE7A2351B6C500677287 /* CurrentWeather.swift */,
+				918464C123539B7D0092C04B /* Forecast.swift */,
+			);
+			path = wheatherapp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91024CBD235108D300C6BE7F /* wheatherapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91024CD0235108D600C6BE7F /* Build configuration list for PBXNativeTarget "wheatherapp" */;
+			buildPhases = (
+				01F580B1DDB53B359C1E71AC /* [CP] Check Pods Manifest.lock */,
+				91024CBA235108D300C6BE7F /* Sources */,
+				91024CBB235108D300C6BE7F /* Frameworks */,
+				91024CBC235108D300C6BE7F /* Resources */,
+				4B3E0C9E82E81BD53E5997DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wheatherapp;
+			productName = wheatherapp;
+			productReference = 91024CBE235108D300C6BE7F /* wheatherapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91024CB6235108D300C6BE7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Mehmet Eroğlu";
+				TargetAttributes = {
+					91024CBD235108D300C6BE7F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 91024CB9235108D300C6BE7F /* Build configuration list for PBXProject "wheatherapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91024CB5235108D300C6BE7F;
+			productRefGroup = 91024CBF235108D300C6BE7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91024CBD235108D300C6BE7F /* wheatherapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91024CBC235108D300C6BE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91024CCC235108D600C6BE7F /* LaunchScreen.storyboard in Resources */,
+				91024CC9235108D600C6BE7F /* Assets.xcassets in Resources */,
+				91024CC7235108D300C6BE7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F580B1DDB53B359C1E71AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wheatherapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B3E0C9E82E81BD53E5997DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wheatherapp/Pods-wheatherapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wheatherapp/Pods-wheatherapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wheatherapp/Pods-wheatherapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91024CBA235108D300C6BE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91024CC4235108D300C6BE7F /* WeatherVC.swift in Sources */,
+				91024CC2235108D300C6BE7F /* AppDelegate.swift in Sources */,
+				91B9AE7B2351B6C500677287 /* CurrentWeather.swift in Sources */,
+				91B9AE792351B49800677287 /* Constants.swift in Sources */,
+				918464C223539B7D0092C04B /* Forecast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		91024CC5235108D300C6BE7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91024CC6235108D300C6BE7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91024CCA235108D600C6BE7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91024CCB235108D600C6BE7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91024CCE235108D600C6BE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91024CCF235108D600C6BE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91024CD1235108D600C6BE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C11E956B5EC19ADAA29784 /* Pods-wheatherapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76NANZTYJ2;
+				INFOPLIST_FILE = wheatherapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meroglu.Deneme.wheatherapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		91024CD2235108D600C6BE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1608EE48D668D4EC23705F /* Pods-wheatherapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76NANZTYJ2;
+				INFOPLIST_FILE = wheatherapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meroglu.Deneme.wheatherapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91024CB9235108D300C6BE7F /* Build configuration list for PBXProject "wheatherapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91024CCE235108D600C6BE7F /* Debug */,
+				91024CCF235108D600C6BE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91024CD0235108D600C6BE7F /* Build configuration list for PBXNativeTarget "wheatherapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91024CD1235108D600C6BE7F /* Debug */,
+				91024CD2235108D600C6BE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91024CB6235108D300C6BE7F /* Project object */;
+}
