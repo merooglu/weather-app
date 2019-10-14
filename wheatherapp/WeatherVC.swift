@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import CoreLocation
 import Alamofire
 
-class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
 
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var currentTempLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var currentWeatherTypeLabel: UILabel!
-    
     @IBOutlet weak var currentWeatherImageView: UIImageView!
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    let locationManeger = CLLocationManager()
+    var currentLocation: CLLocation!
     
     var currentWeather: CurrentWeather!
     var forecast: Forecast!
@@ -27,18 +29,40 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        locationManeger.delegate = self
+        locationManeger.desiredAccuracy = kCLLocationAccuracyBest
+        locationManeger.requestWhenInUseAuthorization()
+        locationManeger.startMonitoringSignificantLocationChanges()
+        
         tableView.delegate = self
         tableView.dataSource = self
         
         currentWeather = CurrentWeather()
-//        forecast = Forecast()
+        
+    }
     
-        currentWeather.downloadWeatherDetails {
-            // Setup UI to download the data
-            self.downloadForecastData {
-                self.updateMainUI()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        locationAuthStatus()
+    }
+    
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            currentLocation = locationManeger.location
+            Location.sharedInstance.latitude = currentLocation.coordinate.latitude
+            Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+            
+            currentWeather.downloadWeatherDetails {
+                // Setup UI to download the data
+                self.downloadForecastData {
+                    self.updateMainUI()
+                    self.tableView.reloadData()
+                }
             }
             
+        }else {
+            locationManeger.requestWhenInUseAuthorization()
+            locationAuthStatus()
         }
     }
     
@@ -64,6 +88,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         self.forecastsArray.append(forecast)
                         print("---object: \(obj)")
                     }
+                    self.forecastsArray.remove(at: 0)
                 }
             }
             completed()
@@ -71,12 +96,16 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return forecastsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let weatherCell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath)
-        return weatherCell
+        if let weatherCell = tableView.dequeueReusableCell(withIdentifier: "WeatherTVCell", for: indexPath) as? WeatherTVCell {
+            weatherCell.configureCell(forecast: forecastsArray[indexPath.row])
+             return weatherCell
+        }else {
+            return WeatherTVCell()
+        }
     }
 
 }

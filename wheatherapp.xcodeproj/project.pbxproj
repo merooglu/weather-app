@@ -16,6 +16,8 @@
 		918464C223539B7D0092C04B /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918464C123539B7D0092C04B /* Forecast.swift */; };
 		91B9AE792351B49800677287 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9AE782351B49800677287 /* Constants.swift */; };
 		91B9AE7B2351B6C500677287 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9AE7A2351B6C500677287 /* CurrentWeather.swift */; };
+		91FC408D2355058D00BC2E05 /* WeatherTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC408C2355058D00BC2E05 /* WeatherTVCell.swift */; };
+		91FC408F2355184D00BC2E05 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC408E2355184D00BC2E05 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		918464C123539B7D0092C04B /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		91B9AE782351B49800677287 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		91B9AE7A2351B6C500677287 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		91FC408C2355058D00BC2E05 /* WeatherTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTVCell.swift; sourceTree = "<group>"; };
+		91FC408E2355184D00BC2E05 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		9C33FBF561C2B66B461A4C04 /* Pods_wheatherapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wheatherapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,8 @@
 				91B9AE782351B49800677287 /* Constants.swift */,
 				91B9AE7A2351B6C500677287 /* CurrentWeather.swift */,
 				918464C123539B7D0092C04B /* Forecast.swift */,
+				91FC408C2355058D00BC2E05 /* WeatherTVCell.swift */,
+				91FC408E2355184D00BC2E05 /* Location.swift */,
 			);
 			path = wheatherapp;
 			sourceTree = "<group>";
@@ -216,7 +222,9 @@
 				91024CC2235108D300C6BE7F /* AppDelegate.swift in Sources */,
 				91B9AE7B2351B6C500677287 /* CurrentWeather.swift in Sources */,
 				91B9AE792351B49800677287 /* Constants.swift in Sources */,
+				91FC408D2355058D00BC2E05 /* WeatherTVCell.swift in Sources */,
 				918464C223539B7D0092C04B /* Forecast.swift in Sources */,
+				91FC408F2355184D00BC2E05 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
