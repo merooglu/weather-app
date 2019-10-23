@@ -14,6 +14,7 @@
 		91024CC9235108D600C6BE7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91024CC8235108D600C6BE7F /* Assets.xcassets */; };
 		91024CCC235108D600C6BE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91024CCA235108D600C6BE7F /* LaunchScreen.storyboard */; };
 		918464C223539B7D0092C04B /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918464C123539B7D0092C04B /* Forecast.swift */; };
+		919CE921235675960039C9E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919CE920235675960039C9E6 /* GoogleService-Info.plist */; };
 		91B9AE792351B49800677287 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9AE782351B49800677287 /* Constants.swift */; };
 		91B9AE7B2351B6C500677287 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9AE7A2351B6C500677287 /* CurrentWeather.swift */; };
 		91FC408D2355058D00BC2E05 /* WeatherTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC408C2355058D00BC2E05 /* WeatherTVCell.swift */; };
@@ -31,6 +32,7 @@
 		91024CCB235108D600C6BE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91024CCD235108D600C6BE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		918464C123539B7D0092C04B /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		919CE920235675960039C9E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91B9AE782351B49800677287 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		91B9AE7A2351B6C500677287 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		91FC408C2355058D00BC2E05 /* WeatherTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTVCell.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				918464C123539B7D0092C04B /* Forecast.swift */,
 				91FC408C2355058D00BC2E05 /* WeatherTVCell.swift */,
 				91FC408E2355184D00BC2E05 /* Location.swift */,
+				919CE920235675960039C9E6 /* GoogleService-Info.plist */,
 			);
 			path = wheatherapp;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91024CCC235108D600C6BE7F /* LaunchScreen.storyboard in Resources */,
+				919CE921235675960039C9E6 /* GoogleService-Info.plist in Resources */,
 				91024CC9235108D600C6BE7F /* Assets.xcassets in Resources */,
 				91024CC7235108D300C6BE7F /* Main.storyboard in Resources */,
 			);
@@ -378,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Meroglu.Deneme.wheatherapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meroglu.wheatherapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -397,7 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Meroglu.Deneme.wheatherapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meroglu.wheatherapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

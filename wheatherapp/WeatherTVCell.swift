@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class WeatherTVCell: UITableViewCell {
 
@@ -22,6 +23,7 @@ class WeatherTVCell: UITableViewCell {
         highTempLabel.text = "\(forecast.maxTemp)"
         lowTempLabel.text = "\(forecast.minTemp)"
         weatherTypeImageView.image = UIImage(named: forecast.weatherType)
+        Analytics.logEvent("cell", parameters: nil)
     }
 
 }
