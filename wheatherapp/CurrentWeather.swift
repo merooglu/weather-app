@@ -6,6 +6,53 @@
 //  Copyright © 2019 Mehmet Eroğlu. All rights reserved.
 //
 
+/**
+Request response
+SUCCESS: {
+    base = stations;
+    clouds =     {
+        all = 90;
+    };
+    cod = 200;
+    coord =     {
+        lat = "21.28";
+        lon = "-157.83";
+    };
+    dt = 1583268787;
+    id = 5856195;
+    main =     {
+        "feels_like" = "300.9";
+        humidity = 78;
+        pressure = 1019;
+        temp = "298.21";
+        "temp_max" = "299.26";
+        "temp_min" = "296.15";
+    };
+    name = Honolulu;
+    sys =     {
+        country = US;
+        id = 7877;
+        sunrise = 1583254188;
+        sunset = 1583296602;
+        type = 1;
+    };
+    timezone = "-36000";
+    visibility = 16093;
+    weather =     (
+                {
+            description = "overcast clouds";
+            icon = 04d;
+            id = 804;
+            main = Clouds;
+        }
+    );
+    wind =     {
+        deg = 300;
+        speed = "2.1";
+    };
+}
+*/
+
 import UIKit
 import Alamofire
 
@@ -32,7 +79,6 @@ class CurrentWeather {
         dateFormatter.timeStyle = .none
         let currentDate = dateFormatter.string(from: Date())
         self._date = "Today, \(currentDate)"
-      
         return _date
     }
     
@@ -55,7 +101,7 @@ class CurrentWeather {
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
         Alamofire.request(currentWeatherURL).responseJSON { response in
             let result = response.result
-            print(response)
+            print("Response: \n",response)
             if let dictionary = result.value as? Dictionary<String, AnyObject> {//[String: AnyObject]
                 
                 if let name = dictionary["name"] as? String {

@@ -59,8 +59,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
                     self.tableView.reloadData()
                 }
             }
-            
-        }else {
+        } else {
             locationManeger.requestWhenInUseAuthorization()
             locationAuthStatus()
         }

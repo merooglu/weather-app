@@ -23,7 +23,8 @@ class WeatherTVCell: UITableViewCell {
         highTempLabel.text = "\(forecast.maxTemp)"
         lowTempLabel.text = "\(forecast.minTemp)"
         weatherTypeImageView.image = UIImage(named: forecast.weatherType)
-        Analytics.logEvent("cell", parameters: nil)
+//        Analytics.logEvent("cell", parameters: nil)
+        Analytics.logEvent("forecast", parameters: ["new_value" : forecast.maxTemp])
     }
 
 }
